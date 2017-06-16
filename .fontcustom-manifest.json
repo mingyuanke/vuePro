@@ -1,0 +1,71 @@
+{
+  "checksum": {
+    "previous": "bd926bfc9495b52439c4cc05933104aa09710790fe9c5d62a63bc52558c97600",
+    "current": "bd926bfc9495b52439c4cc05933104aa09710790fe9c5d62a63bc52558c97600"
+  },
+  "fonts": [
+    "fontcustom/fontcustom_bd926bfc9495b52439c4cc05933104aa.ttf",
+    "fontcustom/fontcustom_bd926bfc9495b52439c4cc05933104aa.svg",
+    "fontcustom/fontcustom_bd926bfc9495b52439c4cc05933104aa.woff",
+    "fontcustom/fontcustom_bd926bfc9495b52439c4cc05933104aa.eot"
+  ],
+  "glyphs": {
+    "alien": {
+      "codepoint": 61696,
+      "source": "../icons/alien.svg"
+    },
+    "back": {
+      "codepoint": 61697,
+      "source": "../icons/back.svg"
+    },
+    "loading": {
+      "codepoint": 61698,
+      "source": "../icons/loading.svg"
+    },
+    "loading-small": {
+      "codepoint": 61699,
+      "source": "../icons/loading-small.svg"
+    },
+    "me": {
+      "codepoint": 61700,
+      "source": "../icons/me.svg"
+    },
+    "message": {
+      "codepoint": 61701,
+      "source": "../icons/message.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "../icons/",
+      "vectors": "../icons/"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "fontcustom",
+      "fonts": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "fontcustom/fontcustom.css",
+    "fontcustom/fontcustom-preview.html"
+  ]
+}

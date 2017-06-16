@@ -1,0 +1,131 @@
+{
+  "checksum": {
+    "previous": "0bcc4521cb78db4eb8a673951c072e0b2a1f678273d5dcd6ae06e3fdc6f7251e",
+    "current": "0bcc4521cb78db4eb8a673951c072e0b2a1f678273d5dcd6ae06e3fdc6f7251e"
+  },
+  "fonts": [
+    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.ttf",
+    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.svg",
+    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.woff",
+    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.eot"
+  ],
+  "glyphs": {
+    "alien": {
+      "codepoint": 61696,
+      "source": "../icons/alien.svg"
+    },
+    "burger": {
+      "codepoint": 61711,
+      "source": "../icons/burger.svg"
+    },
+    "cate": {
+      "codepoint": 61703,
+      "source": "../icons/cate.svg"
+    },
+    "circle": {
+      "codepoint": 61702,
+      "source": "../icons/circle.svg"
+    },
+    "circle-curr": {
+      "codepoint": 61701,
+      "source": "../icons/circle-curr.svg"
+    },
+    "discover": {
+      "codepoint": 61697,
+      "source": "../icons/discover.svg"
+    },
+    "drink": {
+      "codepoint": 61704,
+      "source": "../icons/drink.svg"
+    },
+    "flowers": {
+      "codepoint": 61713,
+      "source": "../icons/flowers.svg"
+    },
+    "fruit": {
+      "codepoint": 61706,
+      "source": "../icons/fruit.svg"
+    },
+    "hotpot": {
+      "codepoint": 61714,
+      "source": "../icons/hotpot.svg"
+    },
+    "market": {
+      "codepoint": 61705,
+      "source": "../icons/market.svg"
+    },
+    "meal": {
+      "codepoint": 61709,
+      "source": "../icons/meal.svg"
+    },
+    "my": {
+      "codepoint": 61699,
+      "source": "../icons/my.svg"
+    },
+    "new-store": {
+      "codepoint": 61707,
+      "source": "../icons/new-store.svg"
+    },
+    "next": {
+      "codepoint": 61716,
+      "source": "../icons/next.svg"
+    },
+    "order": {
+      "codepoint": 61698,
+      "source": "../icons/order.svg"
+    },
+    "porridge": {
+      "codepoint": 61712,
+      "source": "../icons/porridge.svg"
+    },
+    "punctual": {
+      "codepoint": 61708,
+      "source": "../icons/punctual.svg"
+    },
+    "search": {
+      "codepoint": 61700,
+      "source": "../icons/search.svg"
+    },
+    "send": {
+      "codepoint": 61710,
+      "source": "../icons/send.svg"
+    },
+    "spaghetti": {
+      "codepoint": 61715,
+      "source": "../icons/spaghetti.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "../icons/",
+      "vectors": "../icons/"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "fontcustom",
+      "fonts": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "fontcustom/fontcustom.css",
+    "fontcustom/fontcustom-preview.html"
+  ]
+}

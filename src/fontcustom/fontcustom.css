@@ -1,0 +1,81 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.eot");
+  src: url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.woff") format("woff"),
+       url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.ttf") format("truetype"),
+       url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_0bcc4521cb78db4eb8a673951c072e0b.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-alien:before,
+.icon-burger:before,
+.icon-cate:before,
+.icon-circle:before,
+.icon-circle-curr:before,
+.icon-discover:before,
+.icon-drink:before,
+.icon-flowers:before,
+.icon-fruit:before,
+.icon-hotpot:before,
+.icon-market:before,
+.icon-meal:before,
+.icon-my:before,
+.icon-new-store:before,
+.icon-next:before,
+.icon-order:before,
+.icon-porridge:before,
+.icon-punctual:before,
+.icon-search:before,
+.icon-send:before,
+.icon-spaghetti:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-alien:before { content: "\f100"; }
+.icon-burger:before { content: "\f10f"; }
+.icon-cate:before { content: "\f107"; }
+.icon-circle:before { content: "\f106"; }
+.icon-circle-curr:before { content: "\f105"; }
+.icon-discover:before { content: "\f101"; }
+.icon-drink:before { content: "\f108"; }
+.icon-flowers:before { content: "\f111"; }
+.icon-fruit:before { content: "\f10a"; }
+.icon-hotpot:before { content: "\f112"; }
+.icon-market:before { content: "\f109"; }
+.icon-meal:before { content: "\f10d"; }
+.icon-my:before { content: "\f103"; }
+.icon-new-store:before { content: "\f10b"; }
+.icon-next:before { content: "\f114"; }
+.icon-order:before { content: "\f102"; }
+.icon-porridge:before { content: "\f110"; }
+.icon-punctual:before { content: "\f10c"; }
+.icon-search:before { content: "\f104"; }
+.icon-send:before { content: "\f10e"; }
+.icon-spaghetti:before { content: "\f113"; }
