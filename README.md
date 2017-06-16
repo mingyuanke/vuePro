@@ -1,4 +1,4 @@
-# wy-cloud
+# wy
 
 > A Vue.js project
 
