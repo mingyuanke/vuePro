@@ -22,6 +22,9 @@
     <div class="item-group">
       <table-panel v-bind:cells-info="fInfo"></table-panel>
     </div>
+    <div class="item-group">
+      <list-panel v-bind:comInfo="listInfo"></list-panel>
+    </div>
   </div>
 </template>
 <script>
@@ -44,13 +47,31 @@
   import PanicCell from "./PanicCell";
   import BasePanel from "../components/base/BasePanel";
   import PreferCell from "./preferCell.vue"
+  import ListPanel from "../components/base/ListPanel";
+  import ListCell from "./ListCell.vue"
   Vue.component('table-cell', TableCell);
   Vue.component('panic-cell', PanicCell);
   Vue.component('prefer-cell', PreferCell);
+  Vue.component('list-cell',ListCell);
+  import {Types} from '../store'
   export default{
     name: 'home-page',
+    mounted(){
+      this.$store.dispatch(Types.SET_DATA_BY_KEY, {
+        key: 'promote-shop',
+        data: [{
+          id: 'f1',
+          name: 't1t'
+        }]
+      })
+    },
     data(){
       return {
+        listInfo: {
+          title: '推荐商家',
+          dataSourceKey: 'promote-shop',
+          comp: 'list-cell'
+        },
         preferred: {
           title: '-品质优选-',
           contentComp: 'prefer-cell',
@@ -67,7 +88,7 @@
               label: '大牌精选',
               color: '#7f6aff',
               query: 'coco',
-              target:'/prefer-test'
+              target: '/prefer-test'
             }, {
               src: p2,
               title: 'DQ',
@@ -287,6 +308,7 @@
       }
     },
     components: {
+      ListPanel,
       BasePanel,
       PanicCell,
       HSPanel,

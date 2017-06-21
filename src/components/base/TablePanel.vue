@@ -1,6 +1,6 @@
 <template>
   <div  class="table-panel">
-    <component v-for="item in this['cellsInfo'].cells"  class="table-panel-item" v-bind:style="{width:cellWidth}" v-bind:cell-info="item" :is="cellsInfo.temp"></component>
+    <component v-for="item in this['cellsInfo'].cells"  class="table-panel-item" v-bind:style="{width:cellWidth}" v-bind:key="item.id" v-bind:cell-info="item" :is="cellsInfo.temp"></component>
   </div>
 </template>
 <script>

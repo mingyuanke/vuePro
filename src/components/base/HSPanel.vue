@@ -9,7 +9,7 @@
     </div>
     <div class="h-s-panel-content" v-bind:style="{transform:this.transformStyle,transition:this.transitionStyle}">
       <div class="content-items">
-        <component class="h-s-panel-item" :is="itemComp" v-for="item of PanicItems" v-bind:item-info="item"></component>
+        <component class="h-s-panel-item" :is="itemComp" v-for="item of PanicItems" v-bind:key="item.id" v-bind:item-info="item"></component>
       </div>
       <router-link class="h-s-panel-item-link" v-if="this['panelInfo']['moreTarget']"
                    v-bind:to="{path:this['panelInfo']['moreTarget']}"

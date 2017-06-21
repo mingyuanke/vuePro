@@ -5,7 +5,6 @@ import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
 import {default as modules,type} from './modules'
-
 Vue.use(VueX);
 export default new VueX.Store({
   state,
@@ -15,4 +14,3 @@ export default new VueX.Store({
   modules
 });
 export const Types=type;
-

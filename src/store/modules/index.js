@@ -4,6 +4,5 @@ export default {
   [comps.LIST_PANEL]:listPanel
 }
 export const type={
-  comps:comps,
-  [comps.LIST_PANEL]:listPanelTypes
+  ...listPanelTypes
 };
