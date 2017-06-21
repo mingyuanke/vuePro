@@ -1,3 +1,4 @@
 import {ajax} from './ajax'
 import VSlider from './vueSlider'
-export {ajax,VSlider}
+import Map from './map'
+export {ajax,VSlider,Map}

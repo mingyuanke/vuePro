@@ -5,7 +5,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './fontcustom/fontcustom.css'
-
+import {Map} from './tools'
+new Map();
 Vue.config.productionTip = false;
 Vue.filter('priceFormat',function (value) {
   if (!isNaN(parseFloat(value))){
