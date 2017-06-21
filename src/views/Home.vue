@@ -56,7 +56,7 @@
   import {Types} from '../store'
   export default{
     name: 'home-page',
-    mounted(){
+    beforeCreate(){
       this.$store.dispatch(Types.SET_DATA_BY_KEY, {
         key: 'promote-shop',
         data: [{

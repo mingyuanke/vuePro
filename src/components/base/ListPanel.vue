@@ -2,6 +2,7 @@
   <div class="list-panel">
     <div class="list-panel-title">
       <span v-if="this.title" class="list-panel-title-text">{{title}}</span>
+      <component v-bind:is="itemComp" class="list-panel-item" v-for="item of listData" v-bind:key="item.id" v-bind:item-info="item"></component>
     </div>
   </div>
 </template>
@@ -13,15 +14,14 @@
     data(){
       return {
         title:this['comInfo']['title']||false,
-        dataSourceKey:'',
+        dataSourceKey:this['comInfo']['dataSourceKey'],
         itemComp:this['comInfo']['comp'],
         listData:[]
       }
     },
-    created(){
-      this.listData=this.$store.getters[Types.GET_LIST_DATA_BY_KEY](this.dataSourceKey)
+    mounted(){
+      this.listData=this.$store.getters[Types.GET_LIST_DATA_BY_KEY](this.dataSourceKey);
     }
-
   }
 </script>
 <style scoped lang="scss">
