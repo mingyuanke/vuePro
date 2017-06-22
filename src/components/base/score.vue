@@ -1,5 +1,7 @@
 <template>
-  <span class="score"></span>
+  <span class="score">
+    
+  </span>
 </template>
 <script>
   export default{

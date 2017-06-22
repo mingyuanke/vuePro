@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "f57b13866030b466a9659523f40ad1c5e5c3ec8ec2ee5c3ef6fa72701d382439",
-    "current": "f57b13866030b466a9659523f40ad1c5e5c3ec8ec2ee5c3ef6fa72701d382439"
+    "previous": "b45eb522d90be5c57153c307476dc53b98e12556ef6fbec1da2e128fad2f713d",
+    "current": "b45eb522d90be5c57153c307476dc53b98e12556ef6fbec1da2e128fad2f713d"
   },
   "fonts": [
-    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.ttf",
-    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.svg",
-    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.woff",
-    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.eot"
+    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.ttf",
+    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.svg",
+    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.woff",
+    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.eot"
   ],
   "glyphs": {
     "alien": {
@@ -97,6 +97,14 @@
     "star": {
       "codepoint": 61717,
       "source": "../icons/star.svg"
+    },
+    "star-boder": {
+      "codepoint": 61718,
+      "source": "../icons/star-boder.svg"
+    },
+    "star-out": {
+      "codepoint": 61719,
+      "source": "../icons/star-out.svg"
     }
   },
   "options": {
