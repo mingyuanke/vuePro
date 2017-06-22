@@ -64,7 +64,11 @@
         key: 'promote-shop',
         data: [{
           id: 'f1',
-          name: 't1t'
+          name: 't1t',
+          brand:'',
+          label:'',
+          distributionLabel:'',
+          score:''
         }]
       });
       Map.ready(()=>{

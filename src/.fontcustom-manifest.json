@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "0bcc4521cb78db4eb8a673951c072e0b2a1f678273d5dcd6ae06e3fdc6f7251e",
-    "current": "0bcc4521cb78db4eb8a673951c072e0b2a1f678273d5dcd6ae06e3fdc6f7251e"
+    "previous": "f57b13866030b466a9659523f40ad1c5e5c3ec8ec2ee5c3ef6fa72701d382439",
+    "current": "f57b13866030b466a9659523f40ad1c5e5c3ec8ec2ee5c3ef6fa72701d382439"
   },
   "fonts": [
-    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.ttf",
-    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.svg",
-    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.woff",
-    "fontcustom/fontcustom_0bcc4521cb78db4eb8a673951c072e0b.eot"
+    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.ttf",
+    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.svg",
+    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.woff",
+    "fontcustom/fontcustom_f57b13866030b466a9659523f40ad1c5.eot"
   ],
   "glyphs": {
     "alien": {
@@ -93,6 +93,10 @@
     "spaghetti": {
       "codepoint": 61715,
       "source": "../icons/spaghetti.svg"
+    },
+    "star": {
+      "codepoint": 61717,
+      "source": "../icons/star.svg"
     }
   },
   "options": {
@@ -107,8 +111,8 @@
     "font_name": "fontcustom",
     "force": false,
     "input": {
-      "templates": "../icons/",
-      "vectors": "../icons/"
+      "templates": "../icons",
+      "vectors": "../icons"
     },
     "no_hash": false,
     "output": {

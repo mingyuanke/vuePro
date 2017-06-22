@@ -29,9 +29,14 @@
 </script>
 <style scoped lang="scss">
   .list-panel-title {
-    padding-left: 0.8rem;
+    padding: 0.3rem 0.8rem 0.2rem;
+    border-bottom: 1px solid rgba(50,50,50,0.1);
     text-align: left;
     font-size: 0.8rem;
-    color: #555;
+    color: #777;
+
+  }
+  .list-panel-content{
+    text-align: left;
   }
 </style>
