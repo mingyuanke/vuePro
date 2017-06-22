@@ -3,7 +3,12 @@
 </template>
 <script>
   export default{
-      name:'score'
+      name:'score',
+    data(){
+          return {
+
+          }
+    }
   }
 </script>
 <style scoped lang="scss">
