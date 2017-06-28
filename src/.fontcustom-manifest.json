@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "b45eb522d90be5c57153c307476dc53b98e12556ef6fbec1da2e128fad2f713d",
-    "current": "b45eb522d90be5c57153c307476dc53b98e12556ef6fbec1da2e128fad2f713d"
+    "previous": "e8404d546e5d3df18ef5241b5fcf6547f4c20532b3922e10265f3f5738793c86",
+    "current": "e8404d546e5d3df18ef5241b5fcf6547f4c20532b3922e10265f3f5738793c86"
   },
   "fonts": [
-    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.ttf",
-    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.svg",
-    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.woff",
-    "fontcustom/fontcustom_b45eb522d90be5c57153c307476dc53b.eot"
+    "fontcustom/fontcustom_e8404d546e5d3df18ef5241b5fcf6547.ttf",
+    "fontcustom/fontcustom_e8404d546e5d3df18ef5241b5fcf6547.svg",
+    "fontcustom/fontcustom_e8404d546e5d3df18ef5241b5fcf6547.woff",
+    "fontcustom/fontcustom_e8404d546e5d3df18ef5241b5fcf6547.eot"
   ],
   "glyphs": {
     "alien": {
@@ -98,9 +98,9 @@
       "codepoint": 61717,
       "source": "../icons/star.svg"
     },
-    "star-boder": {
-      "codepoint": 61718,
-      "source": "../icons/star-boder.svg"
+    "star-border": {
+      "codepoint": 61720,
+      "source": "../icons/star-border.svg"
     },
     "star-out": {
       "codepoint": 61719,

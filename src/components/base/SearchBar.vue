@@ -60,8 +60,8 @@
       line-height: 1.2rem;
       .search-input {
         outline: none;
-        height: 1.2rem;
-        line-height: 1.2rem;
+        height: 1.1rem;
+        line-height: 1.1rem;
         font-weight: bold;
         color: #888888;
         border: none;

@@ -77,6 +77,9 @@
   }
 </script>
 <style scoped lang="scss">
+  .h-s-panel{
+    overflow-x: hidden;
+  }
   .h-s-panel-header {
     text-align: left;
     padding: 0.2rem;

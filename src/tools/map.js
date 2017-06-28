@@ -11,11 +11,21 @@ export default class Map {
       let script = document.createElement('script');
       script.setAttribute('type', 'text/javascript');
       script.setAttribute('id', 'aMap');
-      script.setAttribute('src', `//webapi.amap.com/maps?v=${App_config.map.version}&key=${App_config.map.key}`);
+      script.setAttribute('src', `https://webapi.amap.com/maps?v=${App_config.map.version}&key=${App_config.map.key}`);
       document.body.appendChild(script);
       script.addEventListener('load', () => {
-        readyEventSet.forEach(readyEvent => readyEvent.apply());
-        Map.isReady = true
+        const doReady=()=>{
+          setTimeout(()=>{
+            if(window.AMap.Map){
+              readyEventSet.forEach(readyEvent => readyEvent.apply());
+              Map.isReady = true
+            }
+            else {
+              doReady()
+            }
+          },50)
+        };
+        doReady()
       })
     }
   }

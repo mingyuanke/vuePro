@@ -62,6 +62,7 @@
   .base-page-main {
     flex: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
     background: rgba(0, 0, 0, 0.1);
   }
 

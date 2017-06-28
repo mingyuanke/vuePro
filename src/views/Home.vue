@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <SearchBar v-bind:query="queryDate" v-on:queryChange="searchChange" holder-text="请输入商家、商品名称"/>
+    <SearchBar style="padding-top:2rem" v-bind:query="queryDate" v-on:queryChange="searchChange" holder-text="请输入商家、商品名称"/>
     <ul class="common-search">
       <li v-for="item in this.commonSearch" class="common-search-item">
         <router-link :to="{name:'store'}">{{item}}</router-link>
@@ -25,6 +25,7 @@
     <div class="item-group">
       <list-panel v-bind:comInfo="listInfo"></list-panel>
     </div>
+    <score v-bind:com-info="scoreInfo"></score>
   </div>
 </template>
 <script>
@@ -51,6 +52,7 @@
   import ListCell from "./ListCell.vue"
   import {Types} from '../store'
   import {Map} from '../tools'
+  import Score from "../components/base/score";
   Vue.component('table-cell', TableCell);
   Vue.component('panic-cell', PanicCell);
   Vue.component('prefer-cell', PreferCell);
@@ -90,6 +92,10 @@
     },
     data(){
       return {
+          scoreInfo:{
+            scoreSize:'1rem',
+            scoreValue:3.4
+          },
         listInfo: {
           title: '推荐商家',
           dataSourceKey: 'promote-shop',
@@ -331,6 +337,7 @@
       }
     },
     components: {
+      Score,
       ListPanel,
       BasePanel,
       PanicCell,

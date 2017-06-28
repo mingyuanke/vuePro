@@ -1,10 +1,10 @@
 const SliderTypes = new Set(['V', 'H']);
 let SliderEvents = new Map();
-let startKey = document.touchstart ? 'touchstart' : 'mousedown';
-let moveKey = document.touchmove ? 'touchmove' : 'mousemove';
-let endKey = document.touchend ? 'touchend' : 'mouseup';
-let leaveKey = document.touchleave ? 'touchleave' : 'mouseout';
-let cancelKey = document.touchcancel ? 'touchcancel' : 'mousecancel';
+let startKey = ('ontouchstart' in document) ? 'touchstart' : 'mousedown';
+let moveKey = ('ontouchmove' in document) ? 'touchmove' : 'mousemove';
+let endKey = ('ontouchend' in document) ? 'touchend' : 'mouseup';
+let leaveKey = ('ontouchleave' in document) ? 'touchleave' : 'mouseout';
+let cancelKey = ('ontouchcancel' in document) ? 'touchcancel' : 'mousecancel';
 function touchStart(event) {
   //window.console.log(event);
   window.VSlider.isTouched = true;
