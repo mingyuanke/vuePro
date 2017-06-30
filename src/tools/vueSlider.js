@@ -5,13 +5,38 @@ let moveKey = ('ontouchmove' in document) ? 'touchmove' : 'mousemove';
 let endKey = ('ontouchend' in document) ? 'touchend' : 'mouseup';
 let leaveKey = ('ontouchleave' in document) ? 'touchleave' : 'mouseout';
 let cancelKey = ('ontouchcancel' in document) ? 'touchcancel' : 'mousecancel';
+/**
+ * 获取点触时坐标位置:1.pc端:event.clientX,event.clientY 2.移动端event.touches
+ * @param event
+ */
+function getPosition(event) {
+  if (event.clientX && event.clientY) {
+    return {
+      X:event.clientX,
+      Y:event.clientY
+    }
+  }else if(event.touches.length===1){
+    return{
+      X:event.touches[0].clientX,
+      Y:event.touches[0].clientY
+    }
+  }
+  else {
+    return{
+      X:0,
+      Y:0
+    }
+  }
+
+}
 function touchStart(event) {
   //window.console.log(event);
   window.VSlider.isTouched = true;
   window.VSlider.isSlider = false;
+  let position=getPosition(event);
   window.VSlider.preTouchPosition = {
-    x: event.clientX,
-    y: event.clientY,
+    x: position.X,
+    y: position.Y,
     touchTime: new Date().getTime()
   };
   window.VSlider.currSliderDom = null;
@@ -23,12 +48,13 @@ function touchMove(event) {
   if (window.VSlider && (!window.VSlider.isTouched)) {
     return false
   }
-  if(!window.VSlider.currTouchDom){
+  if (!window.VSlider.currTouchDom) {
     return false
   }
   if (!window.VSlider.isSlider) {
-    let diffX = event.clientX - window.VSlider.preTouchPosition.x;
-    let diffY = event.clientY - window.VSlider.preTouchPosition.y;
+    let position=getPosition(event);
+    let diffX = position.X - window.VSlider.preTouchPosition.x;
+    let diffY = position.Y - window.VSlider.preTouchPosition.y;
     let type = '';
     let max = '';
     if (Math.abs(diffX) > Math.abs(diffY)) {
@@ -50,10 +76,10 @@ function touchMove(event) {
           window.VSlider.currSliderDom.opts.beforeSlide();
           break;
         }
-        if(currDom&&currDom.parentNode){
+        if (currDom && currDom.parentNode) {
           currDom = currDom.parentNode
-        }else {
-          window.VSlider.isTouched=false;
+        } else {
+          window.VSlider.isTouched = false;
           return false
         }
 
@@ -69,10 +95,10 @@ function touchMove(event) {
   let diff = 0;
   switch (window.VSlider.currSliderDom.opts.sliderType) {
     case "H":
-      diff = event.clientX - window.VSlider.preTouchPosition.x;
+      diff = position.X - window.VSlider.preTouchPosition.x;
       break;
     case "V":
-      diff = event.clientY - window.VSlider.preTouchPosition.y;
+      diff = position.Y - window.VSlider.preTouchPosition.y;
       break;
   }
   let newTime = new Date().getTime();
@@ -81,18 +107,18 @@ function touchMove(event) {
     return false
   }
   window.VSlider.preTouchPosition = {
-    x: event.clientX,
-    y: event.clientY,
+    x: position.X,
+    y: position.Y,
     touchTime: newTime
   };
   window.VSlider.distance += diff;
   window.VSlider.currSliderDom.opts.sliding({
     dis: window.VSlider.distance,
-    mDis:diff
+    mDis: diff
   })
 }
 function touchEnd(event) {
-  if(!window.VSlider.currSliderDom){
+  if (!window.VSlider.currSliderDom) {
     return false
   }
   window.VSlider.currSliderDom.opts.afterSlide({
