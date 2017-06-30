@@ -12,19 +12,19 @@ let cancelKey = ('ontouchcancel' in document) ? 'touchcancel' : 'mousecancel';
 function getPosition(event) {
   if (event.clientX && event.clientY) {
     return {
-      X:event.clientX,
-      Y:event.clientY
+      X: event.clientX,
+      Y: event.clientY
     }
-  }else if(event.touches.length===1){
-    return{
-      X:event.touches[0].clientX,
-      Y:event.touches[0].clientY
+  } else if (event.touches && event.touches.length === 1) {
+    return {
+      X: event.touches[0].clientX,
+      Y: event.touches[0].clientY
     }
   }
   else {
-    return{
-      X:0,
-      Y:0
+    return {
+      X: 0,
+      Y: 0
     }
   }
 
@@ -33,7 +33,7 @@ function touchStart(event) {
   //window.console.log(event);
   window.VSlider.isTouched = true;
   window.VSlider.isSlider = false;
-  let position=getPosition(event);
+  let position = getPosition(event);
   window.VSlider.preTouchPosition = {
     x: position.X,
     y: position.Y,
@@ -45,6 +45,7 @@ function touchStart(event) {
   window.VSlider.currTouchDom = event.target
 }
 function touchMove(event) {
+  let position = getPosition(event);
   if (window.VSlider && (!window.VSlider.isTouched)) {
     return false
   }
@@ -52,7 +53,6 @@ function touchMove(event) {
     return false
   }
   if (!window.VSlider.isSlider) {
-    let position=getPosition(event);
     let diffX = position.X - window.VSlider.preTouchPosition.x;
     let diffY = position.Y - window.VSlider.preTouchPosition.y;
     let type = '';
